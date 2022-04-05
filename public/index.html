@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="./images/fav.svg" type="image/x-icon">
+    <title>Aerochain</title>
+</head>
+
+<body class="font-inter font-normal bg-black">
+
+    <!-- Header -->
+    <header class="relative z-50">
+        <!-- Navbar -->
+        <nav class="fixed left-0 right-0 top-0">
+            <div class="container flex items-center sm:mt-4 py-2 gap-8">
+                <!-- Logo Brand -->
+                <!-- <a href="#">
+                    <img src="./images/icon.svg" alt="icon" class="w-40 md:w-52">
+                </a> -->
+                <!-- Humberger Menu -->
+                <div id="burger-menu"
+                    class="flex sm:hidden ml-auto items-center text-slate-500 p-2 rounded hover:bg-white">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <!-- Nav Menu -->
+                <ul class="hidden sm:flex flex-1 justify-center items-center gap-x-12">
+                    <li>
+                        <a href="#about" class="nav-items nav-active">about</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#roadmap" class="nav-items">roadmap</a>
+                    </li> -->
+                    <li>
+                        <a href="#tokenomics" class="nav-items">tokenomics</a>
+                    </li>
+                    <li>
+                        <a href="#team" class="nav-items">team</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#community" class="nav-items">community</a>
+                    </li> -->
+                </ul>
+                <div class="hidden sm:block">
+                    <a href="#" class="btn btn-light">Contact Audit</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Off canvas | sidebar menu -->
+        <div class="hidden sidebar-menu fixed top-0 left-0 bottom-0 w-full z-50">
+            <nav class="relative flex flex-col py-6 px-6 w-full h-full bg-white overflow-y-auto">
+                <div class="flex items-center mb-4">
+                    <img src="./images/icon.svg" alt="Logo" class="w-3/5" />
+                    <button class="sidebar-close ml-auto">
+                        <svg class="h-6 w-6 text-slate-600 cursor-pointer hover:text-slate-800"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <ul class="flex flex-col text-sm text-slate-800">
+                    <li>
+                        <a class="sidebar-items" href="#about">About</a>
+                    </li>
+                    <!-- <li>
+                        <a class="sidebar-items" href="#roadmap">Roadmap</a>
+                    </li> -->
+                    <li>
+                        <a class="sidebar-items" href="#tokenomics">Tokenomics</a>
+                    </li>
+                    <li>
+                        <a class="sidebar-items" href="#team">Team</a>
+                    </li>
+                    <!-- <li>
+                        <a class="sidebar-items" href="#community">Community</a>
+                    </li> -->
+
+                    <div class="mt-12">
+                        <a class="block btn btn-primary" href="/Aero-BSC-Audit-15082300.pdf" target="_blank">Contract
+                            Audit</a>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-12">
+
+        <!-- Revisi -->
+        <!-- About -->
+        <section id="about" class="container py-16 mb-20">
+            <div class="grid grid-cols-1 sm:grid-cols-2 items-center" data-aos="fade-up">
+                <div class="flex justify-center items-center flex-col gap-4">
+                    <div class="flex flex-col sm:flex-row items-center">
+                        <img src="./images/logo.png" alt="logo" class="sm:w-1/3">
+                        <h1 class="uppercase text-yellow-400 text-5xl font-bold">AEROCHAIN</h1>
+                    </div>
+
+                    <h2 class="text-slate-400 text-lg">A Blockchain,
+                        Simplified</h2>
+
+                    <div class="mt-40 sm:w-full">
+                        <div class="flex flex-col sm:flex-row gap-4 sm:items-center sm:text-center">
+                            <a href="#" class="btn btn-primary sm:w-1/3">Start Building</a>
+                            <!-- <a href="#" class="btn btn-outline-light">$AERO Chart</a>
+                            <a href="#" class="btn btn-outline-light">Whitepaper</a> -->
+                            <div class="flex flex-1 justify-between sm:justify-start gap-4">
+                                <a href="https://aerochaincoin.org/Aerochain%20Whitepaper_final.pdf" class="btn btn-outline-light grow">Whitepaper</a>
+                                <a href="https://github.com/AEROOSTER" class="btn btn-outline-light grow">Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Higher Transaction -->
+        <section id="h-transaction" class="container py-16">
+            <div class="grid grid-cols-1 sm:grid-cols-2 items-center gap-8" data-aos="fade-up">
+                <div class="flex flex-col text-center sm:text-left gap-8">
+                    <h1 class="text-4xl sm:text-6xl text-slate-100 font-bold">
+                        <span class="text-yellow-400">Higher</span> <br>
+                        transaction <br> Performance
+                    </h1>
+                    
+                    <div class="text-sm sm:text-lg text-slate-500">Using HPOS consensus mechanism, TPS reaches <span class="text-yellow-400 font-semibold">500+</span> and block out time is as low as <span class="text-yellow-400 font-semibold">3S</span></div>
+                </div>
+                <div class="flex items-center justify-center sm:px-12">
+                    <img src="./images/feature1.a9252bc3.png" alt="illustrasi1" class="w-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- Lower Transaction -->
+        <section id="l-transaction" class="container py-16">
+            <div class="grid grid-cols-1 sm:grid-cols-2 items-center gap-8" data-aos="fade-up">
+                <div class="flex flex-col text-center sm:text-left gap-8">
+                    <h1 class="text-4xl sm:text-6xl text-slate-100 font-bold">
+                        <span class="text-yellow-400">Lower</span> <br>
+                        transaction <br> Fees
+                    </h1>
+                    
+                    <div class="text-sm sm:text-lg text-slate-500">It has meta transaction function to further reduce the chain cost for developers and users</div>
+                </div>
+                <div class="flex items-center justify-center sm:px-12 sm:order-first">
+                    <img src="./images/feature2.59d0d01b.png" alt="illustrasi2" class="w-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- Smoother -->
+        <section id="smoother" class="container py-16">
+            <div class="grid grid-cols-1 sm:grid-cols-2 items-center gap-8" data-aos="fade-up">
+                <div class="flex flex-col text-center sm:text-left gap-8">
+                    <h1 class="text-4xl sm:text-6xl text-slate-100 font-bold">
+                        <span class="text-yellow-400">Smoother</span> <br>
+                        Cross chain <br> Experience
+                    </h1>
+                    
+                    <div class="text-sm sm:text-lg text-slate-500">Support cross chain asset transmission of multiple mainstream currencies to create even better cross chain experience</div>
+                </div>
+                <div class="flex items-center justify-center sm:px-12">
+                    <img src="./images/feature3.e64d6a74.png" alt="illustrasi2" class="w-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- contract -->
+        <section id="contract" class="container py-16">
+            <div class="grid grid-cols-1 sm:grid-cols-2 items-center gap-8" data-aos="fade-up">
+                <div class="flex flex-col text-center sm:text-left gap-8">
+                    <h1 class="text-4xl sm:text-6xl text-slate-100 font-bold">
+                        <span class="text-yellow-400">More</span> <br>
+                        Comprehensive <br> Contract
+                    </h1>
+                    
+                    <div class="text-sm sm:text-lg text-slate-500">Supports RPC interface of all Ethereum and related SDK to seamlessly connect the ecology on Ethereum chain</div>
+                </div>
+                <div class="flex items-center justify-center sm:px-12 sm:order-first">
+                    <img src="./images/feature4.7b38a5a7.png" alt="illustrasi2" class="w-full">
+                </div>
+            </div>
+        </section>
+
+        <div class="devider"></div>
+
+        <!-- Roadmaps -->
+        <!-- <section id="roadmap" class="container py-12">
+            <div class="grid grid-cols-1 sm:grid-cols-2 items-center gap-8" data-aos="fade-up">
+                <h1 class="text-4xl sm:text-6xl text-slate-100 font-bold sm:order-last">
+                    <span class="text-yellow-400">Roadmaps</span>
+                </h1>
+
+                <div class=""></div>
+            </div>
+        </section> -->
+
+        <!-- Tokenomics -->
+        <section id="tokenomics" class="container py-12 mt-20">
+            <div class="grid grid-cols-1 sm:grid-cols-2 items-center gap-8" data-aos="fade-up">
+                <h1 class="text-4xl sm:text-6xl text-slate-100 font-bold"> The <br>
+                    <span class="text-yellow-400">Tokenomics</span>
+                </h1>
+
+                <div class="relative" data-aos="fade-right" data-aos-delay="1000">
+                    <div id="pie" class="w-full p-y4"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team -->
+        <section id="team" class="container py-12">
+            <div class="grid grid-cols-1 items-center gap-8" data-aos="fade-up">
+                <h1 class="text-4xl sm:text-6xl text-slate-100 font-bold text-center">Know The <span class="text-yellow-400">Team</span></h1>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-6 gap-2 px-12 sm:px-0" data-aos="fade-up" data-aos-delay="1000">
+                    <div class="card card-secondary">
+                        <img src="./images/team/ceo.jpg" alt="ceo" class="object-cover h-64 object-top">
+                        <div class="card-body">
+                            <h4 class="">Samuel Tabuty</h4>
+                            <small class="text-xs text-slate-300">CEO</small>
+                        </div>
+                    </div>
+                    <div class="card card-secondary">
+                        <img src="./images/team/coo.jpg" alt="ceo" class="object-cover h-64 object-top">
+                        <div class="card-body">
+                            <h4 class="">Yosef HW</h4>
+                            <small class="text-xs text-slate-300">COO</small>
+                        </div>
+                    </div>
+                    <div class="card card-secondary">
+                        <img src="./images/team/globalRelation.jpg" alt="ceo" class="object-cover h-64 object-top">
+                        <div class="card-body">
+                            <h4 class="">Yesaya Ray</h4>
+                            <small class="text-xs text-slate-300">Global Relation</small>
+                        </div>
+                    </div>
+                    <div class="card card-secondary">
+                        <img src="./images/team/publicRelation.jpg" alt="ceo" class="object-cover h-64 object-top">
+                        <div class="card-body">
+                            <h4 class="">Nico Aditya</h4>
+                            <small class="text-xs text-slate-300">Public Relation</small>
+                        </div>
+                    </div>
+                    <div class="card card-secondary">
+                        <img src="./images/team/scriptleader.jpg" alt="ceo" class="object-cover h-64 object-top">
+                        <div class="card-body">
+                            <h4 class="">Sisi Indri</h4>
+                            <small class="text-xs text-slate-300">Script Leader</small>
+                        </div>
+                    </div>
+                    <div class="card card-secondary">
+                        <img src="./images/team/socialMediaLeader.jpg" alt="ceo" class="object-cover h-64 object-top">
+                        <div class="card-body">
+                            <h4 class="">Hadasa Kwok</h4>
+                            <small class="text-xs text-slate-300">Social Media Leader</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- About -->
+        <!-- <section id="about"
+            class="container flex flex-1 flex-col-reverse sm:flex-row items-center gap-y-12 sm:gap-x-4 py-16 mb-12 mt-2 sm:mt-52">
+            <div class="sm:w-1/2 -mt-40 z-20">
+                <div class="card card-secondary text-center mb-6 backdrop-blur-sm">
+                    <h1 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold">Welcome to <span
+                            class="text-yellow-400 uppercase">aerochain</span> <br> a blockchain, simplified.</h1>
+                    <p class="mt-4 text-slate-300">
+                        Aerochain is a blockchain that provides everything you
+                        need.
+                        <br><br>
+                        Aerochain has an experienced and based on Dev team with
+                        plenty of experience behind them to see the project grow.
+                        Our team is active, and the platform keep evolving over the
+                        next few months. We're ready for new features, competitions,
+                        challenges, donations and more.
+                        <br><br>
+                        With a Huge Potential Long Term and an experienced Team, we
+                        knows how to create serious Huge HYPE by promoting it
+                        everywhere.
+                    </p>
+                </div>
+                <div class="flex flex-1 flex-col sm:flex-row justify-center gap-4">
+                    <a href="#" class="btn btn-primary uppercase">buy $aero</a>
+                    <a href="#" class="btn btn-outline-light uppercase">$aero chart</a>
+                    <a href="#" class="btn btn-outline-light uppercase">whitepaper</a>
+                </div>
+            </div>
+            <div class="w-10/12 sm:w-1/2 sm:-mt-20 flex items-center justify-center">
+                <img class="w-full max-h-96" id="wing" src="./images/fav.svg" alt="logo-icon" />
+            </div>
+
+        </section> -->
+
+        <!-- Roadmaps -->
+        <!-- <section id="roadmaps" class="container py-16 mb-20">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl text-white font-bold sm:text-center uppercase">Our Roadmaps</h1>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 mt-4">
+                <div class="card">
+                    <div class="flex gap-x-4 justify-start items-center mb-4">
+                        <div class="p-2 rounded-full text-black bg-yellow-500">
+                            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                            </svg>
+                        </div>
+                        <h2 class="text-lg text-slate-300 font-bold">Foundation Build</h2>
+                    </div>
+                    <p class="text-slate-500 text-sm">We're gonna do some press release and audit the contract with
+                        Dessert Finance. And also open an AMA on Phoenix Chain and surely do some massive calls</p>
+                </div>
+                <div class="card">
+                    <div class="flex gap-x-4 justify-start items-center mb-4">
+                        <div class="p-2 rounded-full text-black bg-yellow-500">
+                            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z">
+                            </svg>
+                        </div>
+                        <h2 class="text-lg text-slate-300 font-bold">Start Developing</h2>
+                    </div>
+                    <p class="text-slate-500 text-sm">After we have our strong foundation build, we will shift our next
+                        focus to the development of the blockchain, we'll be actively in touch with our community to
+                        share the development progress</p>
+                </div>
+                <div class="card">
+                    <div class="flex gap-x-4 justify-start items-center mb-4">
+                        <div class="p-2 rounded-full text-black bg-yellow-500">
+                            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+                            </svg>
+                        </div>
+                        <h2 class="text-lg text-slate-300 font-bold">Community Events</h2>
+                    </div>
+                    <p class="text-slate-500 text-sm">We'll also gonna held many community events such as giveaways,
+                        contest, and many more. Be sure to join us!</p>
+                </div>
+                <div class="card">
+                    <div class="flex gap-x-4 justify-start items-center mb-4">
+                        <div class="p-2 rounded-full text-black bg-yellow-500">
+                            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
+                            </svg>
+                        </div>
+                        <h2 class="text-lg text-slate-300 font-bold">Heavy Marketing</h2>
+                    </div>
+                    <p class="text-slate-500 text-sm">More heavy marketing on the project to attract more future
+                        investors to join the projects!</p>
+                </div>
+                <div class="card">
+                    <div class="flex gap-x-4 justify-start items-center mb-4">
+                        <div class="p-2 rounded-full text-black bg-yellow-500">
+                            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h2 class="text-lg text-slate-300 font-bold">Blockchain Launch</h2>
+                    </div>
+                    <p class="text-slate-500 text-sm">TBA!</p>
+                </div>
+                <div class="card">
+                    <div class="flex gap-x-4 justify-start items-center mb-4">
+                        <div class="p-2 rounded-full text-black bg-yellow-500">
+                            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
+                            </svg>
+                        </div>
+                        <h2 class="text-lg text-slate-300 font-bold">Heavy Marketing 2</h2>
+                    </div>
+                    <p class="text-slate-500 text-sm">Heavy marketing after blockchain launch!</p>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- <div class="bg-white"> -->
+
+        <!-- Tokenomics -->
+        <!-- <section id="tokenomics" class="container py-16 mb-20">
+                <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold sm:text-center uppercase">Our <span
+                        class="text-yellow-400">Tokenomics</span></h1>
+                <p class="text-md text-slate-600 font-extrabold sm:text-center mt-4 mb-12">Total Supply 100.000.000.000
+                </p>
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:gap-x-24 md:gap-x-32 text-center gap-8 sm:gap-y-12 text-lg">
+                    <div class="card bg-yellow-500 flex flex-col items-center">
+                        <h2 class="py-4 px-6 font-medium rounded-full bg-white text-yellow-400">1</h2>
+                        <p class="font-bold mt-4">
+                            Dev Walet 5% <br> (5.000.000.000)
+                        </p>
+                    </div>
+                    <div class="card bg-white drop-shadow-md flex flex-col items-center">
+                        <h2 class="py-4 px-6 font-medium rounded-full bg-slate-100 text-slate-500">2</h2>
+                        <p class="font-bold mt-4 text-slate-500">
+                            Marketing wallet 5% <br> (5.000.000.000)
+                        </p>
+                    </div>
+                    <div class="card bg-yellow-500 flex flex-col items-center">
+                        <h2 class="py-4 px-6 font-medium rounded-full bg-white text-yellow-400">3</h2>
+                        <p class="font-bold mt-4">
+                            RnD wallet 5% <br> (5.000.000.000)
+                        </p>
+                    </div>
+                    <div class="card bg-white drop-shadow-md flex flex-col items-center">
+                        <h2 class="py-4 px-6 font-medium rounded-full bg-slate-100 text-slate-500">4</h2>
+                        <p class="font-bold mt-4 text-slate-500">
+                            Burn 10% <br> (10.000.000.000)
+                        </p>
+                    </div>
+                    <div class="card bg-yellow-500 flex flex-col items-center">
+                        <h2 class="py-4 px-6 font-medium rounded-full bg-white text-yellow-400">5</h2>
+                        <p class="font-bold mt-4">
+                            Presale 38% (200 BNB) <br> (38.000.000.000) <br> (1 BNB = 190.000.000 Token)
+                        </p>
+                    </div>
+                    <div class="card bg-white drop-shadow-md flex flex-col items-center">
+                        <h2 class="py-4 px-6 font-medium rounded-full bg-slate-100 text-slate-500">6</h2>
+                        <p class="font-bold mt-4 text-slate-500">
+                            Private 10% (50 BNB) <br> (1 BNB = 200.000.000 Token)
+                        </p>
+                    </div>
+                    <div class="card bg-yellow-500 flex flex-col items-center">
+                        <h2 class="py-4 px-6 font-medium rounded-full bg-white text-yellow-400">7</h2>
+                        <p class="font-bold mt-4">
+                            Add supply & LP 27% <br> (150 BNB) <br> (1 BNB = 180.000.000 Token)
+                        </p>
+                    </div>
+                </div>
+            </section> -->
+
+        <!-- Taxes -->
+        <!-- <section id="taxes" class="container py-16 mb-20">
+                <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold sm:text-center uppercase">Taxes</h1>
+                <div class="grid grid-cols-1 sm:grid-cols-2 mt-4 gap-2">
+                    <div class="card card-light text-center">
+                        <div class="py-12">
+                            <img class="h-20 mb-6 mx-auto" src="./images/buy-button.png" alt="" />
+                            <span class="text-4xl font-bold font-heading text-green-500">Buy (6%)</span>
+                            <div class="flex flex-col items-center mt-4">
+                                <ul class="text-slate-600 text-sm sm:text-base">
+                                    <li class="flex mb-3">
+                                        <svg class="w-5 h-5 mr-1 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg><span>1% Dev</span>
+                                    </li>
+                                    <li class="flex mb-3">
+                                        <svg class="w-5 h-5 mr-1 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg><span>2% Marketing</span>
+                                    </li>
+                                    <li class="flex mb-3">
+                                        <svg class="w-5 h-5 mr-1 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg><span>2% For holders </span>
+                                    </li>
+                                    <li class="flex">
+                                        <svg class="w-5 h-5 mr-1 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg><span>1% RnD</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-light text-center">
+                        <div class="py-12">
+                            <img class="h-20 mb-6 mx-auto" src="./images/sell-button.png" alt="" />
+                            <h3 class="mb-2 text-red-500 text-4xl font-bold font-heading">Sell (8%)</h3>
+                            <div class="flex flex-col items-center mt-4">
+                                <ul class="text-slate-600 text-sm sm:text-base">
+                                    <li class="flex items-center mb-3">
+                                        <svg class="w-5 h-5 mr-1 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg><span>1% Dev</span>
+                                    </li>
+                                    <li class="flex items-center mb-3">
+                                        <svg class="w-5 h-5 mr-1 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg><span>2% Marketing</span>
+                                    </li>
+                                    <li class="flex items-center mb-3">
+                                        <svg class="w-5 h-5 mr-1 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg><span>2% For holders </span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-1 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg><span>3% RnD</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+        <!-- Team -->
+        <!-- <section id="team" class="container py-16 mb-20">
+                <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold sm:text-center uppercase">Meet the Team!</h1>
+                <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:gap-4">
+                    <div class="card bg-white drop-shadow-md">
+                        <img src="./images/team/ceo.jpg" alt="ceo"
+                            class="w-full h-72 object-top object-cover rounded-t-lg">
+                        <div class="mt-4 flex flex-1">
+                            <div class="">
+                                <h3 class="font-bold text-lg">Samuel Tabuty</h3>
+                                <p class="text-sm">CEO</p>
+                            </div>
+                            <a href="#"
+                                class="ml-auto flex py-2 px-4 items-center justify-center rounded-lg text-lg bg-blue-500 text-white">
+                                <i class="fa-brands fa-telegram fa-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card bg-white drop-shadow-md">
+                        <img src="./images/team/coo.jpg" alt="coo"
+                            class="w-full h-72 object-top object-cover rounded-t-lg">
+                        <div class="mt-4 flex flex-1">
+                            <div class="">
+                                <h3 class="font-bold text-lg">Yosef HW</h3>
+                                <p class="text-sm">COO</p>
+                            </div>
+                            <a href="#"
+                                class="ml-auto flex py-2 px-4 items-center justify-center rounded-lg text-lg bg-blue-500 text-white">
+                                <i class="fa-brands fa-telegram fa-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card bg-white drop-shadow-md">
+                        <img src="./images/team/globalRelation.jpg" alt="global relation"
+                            class="w-full h-72 object-top object-cover rounded-t-lg">
+                        <div class="mt-4 flex flex-1">
+                            <div class="">
+                                <h3 class="font-bold text-lg">Yesaya Ray</h3>
+                                <p class="text-sm">Global Relation</p>
+                            </div>
+                            <a href="#"
+                                class="ml-auto flex py-2 px-4 items-center justify-center rounded-lg text-lg bg-blue-500 text-white">
+                                <i class="fa-brands fa-telegram fa-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card bg-white drop-shadow-md">
+                        <img src="./images/team/publicRelation.jpg" alt="public relation"
+                            class="w-full h-72 object-top object-cover rounded-t-lg">
+                        <div class="mt-4 flex flex-1">
+                            <div class="">
+                                <h3 class="font-bold text-lg">Nico Adistya</h3>
+                                <p class="text-sm">Public Relation</p>
+                            </div>
+                            <a href="#"
+                                class="ml-auto flex py-2 px-4 items-center justify-center rounded-lg text-lg bg-blue-500 text-white">
+                                <i class="fa-brands fa-telegram fa-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card bg-white drop-shadow-md">
+                        <img src="./images/team/scriptleader.jpg" alt="script leader"
+                            class="w-full h-72 object-top object-cover rounded-t-lg">
+                        <div class="mt-4 flex flex-1">
+                            <div class="">
+                                <h3 class="font-bold text-lg">Sisi Indri</h3>
+                                <p class="text-sm">Script Leader</p>
+                            </div>
+                            <a href="#"
+                                class="ml-auto flex py-2 px-4 items-center justify-center rounded-lg text-lg bg-blue-500 text-white">
+                                <i class="fa-brands fa-telegram fa-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card bg-white drop-shadow-md">
+                        <img src="./images/team/socialMediaLeader.jpg" alt="social media leader"
+                            class="w-full h-72 object-top object-cover rounded-t-lg">
+                        <div class="mt-4 flex flex-1">
+                            <div class="">
+                                <h3 class="font-bold text-lg">Hadasa Kwok</h3>
+                                <p class="text-sm">Social Media Leader</p>
+                            </div>
+                            <a href="#"
+                                class="ml-auto flex py-2 px-4 items-center justify-center rounded-lg text-lg bg-blue-500 text-white">
+                                <i class="fa-brands fa-telegram fa-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                    </div>
+
+            </section> -->
+
+        <!-- Community -->
+        <!-- <section id="community" class="container py-16">
+                <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold sm:text-center uppercase">Join Our Community</h1>
+                <div class="flex flex-1 text-center gap-4 sm:gap-0 mt-4">
+                    <div class="card flex flex-1 flex-col items-center">
+                        <a href="https://t.me/AEROCHAINCoin" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                                class="svg-inline--fa fa-telegram h-10 w-10 mx-auto text-blue-600" role="img"
+                                viewbox="0 0 496 512">
+                                <path fill="currentColor"
+                                    d="M248 8C111 8 0 119 0 256S111 504 248 504 496 392.1 496 256 384.1 8 248 8zM362.1 176.7c-3.732 39.22-19.88 134.4-28.1 178.3-3.476 18.58-10.32 24.82-16.95 25.42-14.4 1.326-25.34-9.517-39.29-18.66-21.83-14.31-34.16-23.22-55.35-37.18-24.49-16.14-8.612-25 5.342-39.5 3.652-3.793 67.11-61.51 68.33-66.75 .153-.655 .3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283 .746-104.6 69.14-14.85 10.19-26.89 9.934c-8.855-.191-25.89-5.006-38.55-9.123-15.53-5.048-27.88-7.717-26.8-16.29q.84-6.7 18.45-13.7 108.4-47.25 144.6-62.3c68.87-28.65 83.18-33.62 92.51-33.79 2.052-.034 6.639 .474 9.61 2.885a10.45 10.45 0 0 1 3.53 6.716A43.76 43.76 0 0 1 362.1 176.7z">
+                            </svg>
+                            <div class="leading-relaxed">
+                                <span class="text-sm text-slate-400">Telegram</span>
+                                <p class="">@AEROCHAINcoin</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card flex flex-1 flex-col items-center">
+                        <a href="https://twitter.com/AEROCHAINcoin" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+                                class="svg-inline--fa fa-twitter h-10 w-10 mx-auto text-blue-600" role="img"
+                                viewbox="0 0 512 512">
+                                <path fill="currentColor"
+                                    d="M459.4 151.7c.325 4.548 .325 9.097 .325 13.65 0 138.7-105.6 298.6-298.6 298.6-59.45 0-114.7-17.22-161.1-47.11 8.447 .974 16.57 1.299 25.34 1.299 49.06 0 94.21-16.57 130.3-44.83-46.13-.975-84.79-31.19-98.11-72.77 6.498 .974 12.99 1.624 19.82 1.624 9.421 0 18.84-1.3 27.61-3.573-48.08-9.747-84.14-51.98-84.14-102.1v-1.299c13.97 7.797 30.21 12.67 47.43 13.32-28.26-18.84-46.78-51.01-46.78-87.39 0-19.49 5.197-37.36 14.29-52.95 51.65 63.67 129.3 105.3 216.4 109.8-1.624-7.797-2.599-15.92-2.599-24.04 0-57.83 46.78-104.9 104.9-104.9 30.21 0 57.5 12.67 76.67 33.14 23.72-4.548 46.46-13.32 66.6-25.34-7.798 24.37-24.37 44.83-46.13 57.83 21.12-2.273 41.58-8.122 60.43-16.24-14.29 20.79-32.16 39.31-52.63 54.25z">
+                                </path>
+                            </svg>
+                            <div class="leading-relaxed">
+                                <span class="text-sm text-slate-400">Twitter</span>
+                                <p class="">@AEROCHAINcoin</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section> -->
+        <!-- </div> -->
+
+    </main>
+
+    <div class="devider"></div>
+    <footer class="container pt-9 pb-12">
+        <div class="flex flex-col sm:flex-row justify-between items-center gap-y-12">
+            <img src="./images/icon.svg" alt="icon" class="w-48 sm:mb-0">
+            <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+                <small class="text-slate-400 text-sm">&copy; 2002. AEROCHAIN All Rights Reserve</small>
+                <a href="#" class="btn btn-primary flex-initial">BUY $AERO</a>
+            </div>
+        </div>
+        <!-- <div class="mt-8 sm:mt-12 py-2">
+            <h6 class="text-sm text-slate-400 font-semibold">Menu</h6>
+            <ul class="flex flex-col gap-x-4">
+                <li>
+                    <a href="#about" class="bottom-items">About</a>
+                </li>
+                <li>
+                    <a href="#roadmap" class="bottom-items">Roadmap</a>
+                </li>
+                <li>
+                    <a href="#tokenomics" class="bottom-items">Tokenomics</a>
+                </li>
+                <li>
+                    <a href="#team" class="bottom-items">Team</a>
+                </li>
+                <li>
+                    <a href="#community" class="bottom-items">Community</a>
+                </li>
+            </ul>
+        </div> -->
+    </footer>
+
+
+    <!-- JS -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/piechart.js"></script>
+    <script src="/node_modules/particles.js/particles.js"></script>
+    <script>
+        AOS.init({
+            delay: '0',
+            easing: 'ease-in-sine',
+            duration: '1000',
+        });
+
+        particleJS.load('about', 'assets/particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
+</body>
+
+</html>
