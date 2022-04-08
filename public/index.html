@@ -21,13 +21,13 @@
     <title>Aerochain</title>
 </head>
 
-<body class="font-inter font-normal bg-black">
+<body class="font-inter font-normal bg-black text-white">
 
     <!-- Header -->
     <header class="relative z-50">
         <!-- Navbar -->
-        <nav class="fixed left-0 right-0 top-0">
-            <div class="container flex items-center sm:mt-4 py-2 gap-8">
+        <nav class="fixed left-0 right-0 top-0 py-2">
+            <div class="container flex items-center sm:mt-4 gap-8">
                 <!-- Logo Brand -->
                 <!-- <a href="#">
                     <img src="./images/icon.svg" alt="icon" class="w-40 md:w-52">
@@ -40,11 +40,47 @@
                 <!-- Nav Menu -->
                 <ul class="hidden sm:flex flex-1 justify-center items-center gap-x-12">
                     <li>
-                        <a href="#about" class="nav-items nav-active">about</a>
+                        <a href="#" class="nav-items nav-active">Home</a>
                     </li>
-                    <!-- <li>
-                        <a href="#roadmap" class="nav-items">roadmap</a>
-                    </li> -->
+                    <li>
+                        <a href="#about" class="nav-items">about</a>
+                    </li>
+                    <li class="nav-dropdown relative inline-block">
+                        <button type="button" class="nav-items">Ecosystem <i class="fas fa-angle-down ml-1"></i></button>
+                        <ul class="dropdown-menu -ml-2">
+                            <li class="">
+                                <a class="rounded-t dropdown-items" href="#">Launchpad</a>
+                            </li>
+                            <li class="">
+                                <a class="rounded-b dropdown-items" href="#">Exchange</a>
+                            </li>
+                          </ul>
+                    </li>
+                    <li class="nav-dropdown relative inline-block">
+                        <button type="button" class="nav-items">Tools <i class="fas fa-angle-down ml-1"></i></button>
+                        <ul class="dropdown-menu -ml-7">
+                            <li class="">
+                                <a class="rounded-t dropdown-items" href="#">Code Builder</a>
+                            </li>
+                            <li class="">
+                                <a class="rounded-b dropdown-items" href="#">Faucet</a>
+                            </li>
+                          </ul>
+                    </li>
+                    <li class="nav-dropdown relative inline-block">
+                        <button type="button" class="nav-items">Explorer <i class="fas fa-angle-down ml-1"></i></button>
+                        <ul class="dropdown-menu -ml-12">
+                            <li class="">
+                                <a class="rounded-t dropdown-items" href="#">Aerochain Explorer (Testnet)</a>
+                            </li>
+                            <li class="">
+                                <a class="rounded-b dropdown-items" href="#">Aerochain Explorer (Mainet)</a>
+                            </li>
+                          </ul>
+                    </li>
+                    <li>
+                        <a href="http://docs.aerochain.id/" class="nav-items">Docs</a>
+                    </li>
                     <li>
                         <a href="#tokenomics" class="nav-items">tokenomics</a>
                     </li>
@@ -56,14 +92,14 @@
                     </li> -->
                 </ul>
                 <div class="hidden sm:block">
-                    <a href="#" class="btn btn-light">Contact Audit</a>
+                    <a href="#" class="px-4 text-xs py-3 btn-light rounded-full">Contact Audit</a>
                 </div>
             </div>
         </nav>
 
         <!-- Off canvas | sidebar menu -->
         <div class="hidden sidebar-menu fixed top-0 left-0 bottom-0 w-full z-50">
-            <nav class="relative flex flex-col py-6 px-6 w-full h-full bg-white overflow-y-auto">
+            <nav class="relative flex flex-col py-6 px-6 w-full h-full bg-black overflow-y-auto">
                 <div class="flex items-center mb-4">
                     <img src="./images/icon.svg" alt="Logo" class="w-3/5" />
                     <button class="sidebar-close ml-auto">
@@ -74,13 +110,25 @@
                         </svg>
                     </button>
                 </div>
-                <ul class="flex flex-col text-sm text-slate-800">
+                <ul class="flex flex-col text-sm">
                     <li>
-                        <a class="sidebar-items" href="#about">About</a>
+                        <a class="sidebar-items" href="#">Home</a>
                     </li>
-                    <!-- <li>
-                        <a class="sidebar-items" href="#roadmap">Roadmap</a>
-                    </li> -->
+                    <li>
+                        <a class="sidebar-items" href="#about">About Us</a>
+                    </li>
+                    <li>
+                        <a class="sidebar-items" href="">Ecosystem</a>
+                    </li>
+                    <li>
+                        <a class="sidebar-items" href="">Tools</a>
+                    </li>
+                    <li>
+                        <a class="sidebar-items" href="">Explorer</a>
+                    </li>
+                    <li>
+                        <a class="sidebar-items" href="http://docs.aerochain.id/">Docs</a>
+                    </li>
                     <li>
                         <a class="sidebar-items" href="#tokenomics">Tokenomics</a>
                     </li>
@@ -110,22 +158,20 @@
         </div>
         <section id="about" class="container py-16 mb-20">
             <div class="grid grid-cols-1 sm:grid-cols-2 items-center" data-aos="fade-up">
-                <div class="flex justify-center items-center flex-col gap-4">
-                    <div class="flex flex-col sm:flex-row items-center">
-                        <img src="./images/logo.png" alt="logo" class="sm:w-1/3">
-                        <h1 class="uppercase text-yellow-400 text-5xl font-bold">AEROCHAIN</h1>
-                    </div>
-
+                <div class="flex justify-center sm:items-start items-center flex-col gap-4">
+                    
+                    <img src="./images/logo.png" alt="logo" class="sm:w-1/3">
+                    <h1 class="text-4xl font-bold">Welcome to <span class="text-yellow-400">Aerochain</span></h1>
                     <h2 class="text-slate-400 text-lg">A Blockchain,
                         Simplified</h2>
 
-                    <div class="mt-40">
+                    <div class="mt-20">
                         <div class="flex flex-col sm:flex-row gap-4 sm:items-center sm:text-center">
-                            <a href="#" class="btn btn-primary sm:w-1/3">Start Building</a>
+                            <a href="#" class="btn btn-primary">Start Building <i class="fas fa-long-arrow-alt-right"></i></a>
                             <!-- <a href="#" class="btn btn-outline-light">$AERO Chart</a>
                             <a href="#" class="btn btn-outline-light">Whitepaper</a> -->
                             <div class="flex flex-1 justify-between sm:justify-start gap-4">
-                                <a href="https://aerochaincoin.org/Aerochain%20Whitepaper_final.pdf" class="btn btn-outline-light grow">Whitepaper</a>
+                                <a href="https://docs.aerochain.id/" class="btn btn-outline-light grow">Whitepaper</a>
                                 <a href="https://github.com/AEROOSTER" class="btn btn-outline-light grow">Github</a>
                             </div>
                         </div>
@@ -239,6 +285,7 @@
                         <div class="card-body">
                             <h4 class="">Samuel Tabuty</h4>
                             <small class="text-xs text-slate-300">CEO</small>
+                            <a href="#" class="block text-center py-1 text-xs bg-blue-400 rounded-full mt-4">Telegram</a>
                         </div>
                     </div>
                     <div class="card card-secondary">
@@ -246,6 +293,7 @@
                         <div class="card-body">
                             <h4 class="">Yosef HW</h4>
                             <small class="text-xs text-slate-300">COO</small>
+                            <a href="#" class="block text-center py-1 text-xs bg-blue-400 rounded-full mt-4">Telegram</a>
                         </div>
                     </div>
                     <div class="card card-secondary">
@@ -253,6 +301,7 @@
                         <div class="card-body">
                             <h4 class="">Yesaya Ray</h4>
                             <small class="text-xs text-slate-300">Global Relation</small>
+                            <a href="#" class="block text-center py-1 text-xs bg-blue-400 rounded-full mt-4">Telegram</a>
                         </div>
                     </div>
                     <div class="card card-secondary">
@@ -260,6 +309,7 @@
                         <div class="card-body">
                             <h4 class="">Nico Aditya</h4>
                             <small class="text-xs text-slate-300">Public Relation</small>
+                            <a href="#" class="block text-center py-1 text-xs bg-blue-400 rounded-full mt-4">Telegram</a>
                         </div>
                     </div>
                     <div class="card card-secondary">
@@ -267,6 +317,7 @@
                         <div class="card-body">
                             <h4 class="">Sisi Indri</h4>
                             <small class="text-xs text-slate-300">Script Leader</small>
+                            <a href="#" class="block text-center py-1 text-xs bg-blue-400 rounded-full mt-4">Telegram</a>
                         </div>
                     </div>
                     <div class="card card-secondary">
@@ -274,6 +325,7 @@
                         <div class="card-body">
                             <h4 class="">Hadasa Kwok</h4>
                             <small class="text-xs text-slate-300">Social Media Leader</small>
+                            <a href="#" class="block text-center py-1 text-xs bg-blue-400 rounded-full mt-4">Telegram</a>
                         </div>
                     </div>
                 </div>
