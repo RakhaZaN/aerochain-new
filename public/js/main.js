@@ -53,4 +53,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         console.log(scrollpos)
     })
+
+    const dropdowns = document.querySelectorAll(".dropdown");
+
+    dropdowns.forEach(dropdown => {
+    dropdown.querySelector('.dropdown-button').addEventListener("click", () => {
+        dropdown.querySelector('ul').classList.toggle('hidden');
+    });
+    });
 });
