@@ -17,9 +17,6 @@
         background: rgba(0, 0, 0, .2);
         transition: background 1s linear;
     }
-    .fade-in {
-        background: rgba(0, 0, 0, 1);
-    }
 
     .nav-dropdown:hover .dropdown-menu {
         display: block;
@@ -34,10 +31,10 @@
         @apply font-semibold text-yellow-400
     }
     .dropdown-menu {
-        @apply absolute hidden text-gray-700 py-4
+        @apply absolute hidden text-gray-400 py-4
     }
     .dropdown-items {
-        @apply py-2 px-4 block text-sm whitespace-nowrap hover:text-yellow-400  bg-slate-500 backdrop-blur-sm bg-opacity-20
+        @apply py-2 px-4 block text-sm whitespace-nowrap hover:text-yellow-400  bg-slate-500 backdrop-blur-sm bg-opacity-20 hover:backdrop-blur-md
     }
 
     .sidebar-items {
@@ -77,6 +74,10 @@
     .bottom-items {
         @apply text-xs text-slate-200 hover:text-white
     }
+}
+
+.fade-in {
+    background: rgba(0, 0, 0, 1);
 }
 
 @-webkit-keyframes flap{
