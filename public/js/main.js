@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
             remove_class_on_scroll()
         }
 
-        console.log(scrollpos)
+        // console.log(scrollpos)
     })
 
     const dropdowns = document.querySelectorAll(".dropdown");
