@@ -15,7 +15,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/main.js"></script>
-    <script src="https://widgets.coingecko.com/coingecko-coin-price-chart-widget.js"></script>
+    <!-- Graphic Js -->
+    <!-- <script src="https://widgets.coingecko.com/coingecko-coin-price-chart-widget.js"></script> -->
+    <script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
 
     <!-- Fav Icon -->
     <link rel="shortcut icon" href="./images/fav.svg" type="image/x-icon">
@@ -189,11 +191,11 @@
         <div id="particles" class="w-full h-[32rem] sm:h-96 absolute -z-10">
             <canvas class="particles-js-canvas-el"></canvas>
         </div>
-        <section id="about" class="container py-16 mb-8">
+        <section id="about" class="container py-16">
             <div class="flex items-center flex-col sm:flex-row gap-20" data-aos="fade-up">
-                <div class="flex items-center text-center sm:items-start flex-col gap-4">
+                <div class="flex items-center text-center flex-col gap-4">
 
-                    <img src="./images/logo.png" alt="logo" class="sm:w-1/4">
+                    <img src="./images/logo.png" alt="logo" class="sm:w-1/6">
                     <h3 class="text-5xl -mb-5 font-semibold">Welcome to <span
                             class="font-extrabold text-6xl bg-clip-text text-transparent bg-gradient-to-tl from-purple-900 via-orange-400 to-yellow-400">Aerochain</span>
                     </h3>
@@ -220,18 +222,21 @@
                     </div>
                 </div>
 
-                <div class="hidden sm:flex items-center justify-center max-w-sm">
-                    <!-- <div class="px-8 py-6 bg-slate-500 backdrop-blur bg-opacity-30 border border-white rounded-lg"> -->
-                        <p class="text-center">Aerochain is a blockchain that provides everything you need. Aerochain has an experienced and
-                            based on Dev team with plenty of experience behind them to see the project grow. Our team is
-                            active, and the platform keep evolving over the next few months. We're ready for new
-                            features, competitions, challenges, donations and more. with a Huge Potential Long Term and
-                            an experienced Team, we knows how to create serious Huge HYPE by promoting it everywhere.
-                        </p>
-                    <!-- </div> -->
-                </div>
+                <!-- <div class="hidden sm:flex items-center justify-center max-w-sm">
+                    <div class="px-8 py-6 bg-slate-500 backdrop-blur bg-opacity-30 border border-white rounded-lg">
+                    <p class="text-center">Aerochain is a blockchain that provides everything you need. Aerochain has an
+                        experienced and
+                        based on Dev team with plenty of experience behind them to see the project grow. Our team is
+                        active, and the platform keep evolving over the next few months. We're ready for new
+                        features, competitions, challenges, donations and more. with a Huge Potential Long Term and
+                        an experienced Team, we knows how to create serious Huge HYPE by promoting it everywhere.
+                    </p>
+                    </div>
+                </div> -->
             </div>
         </section>
+        <coingecko-coin-price-marquee-widget coin-ids="bitcoin,ethereum,eos,ripple,litecoin" currency="usd" background-color="#000000" locale="en" font-color="#ffffff">
+        </coingecko-coin-price-marquee-widget>
 
         <!-- Higher Transaction -->
         <section id="h-transaction" class="container py-16">
@@ -311,14 +316,15 @@
         <!-- Tokenomics -->
         <section id="tokenomics" class="container py-12 mt-20">
             <div class="grid grid-cols-1 items-center gap-8" data-aos="fade-up">
-                <h1 class="text-5xl sm:text-6xl text-slate-100 font-bold text-center">The <span class="text-yellow-400">Tokenomics</span></h1>
+                <h1 class="text-5xl sm:text-6xl text-slate-100 font-bold text-center">The <span
+                        class="text-yellow-400">Tokenomics</span></h1>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 items-center gap-y-8">
                     <div class="relative sm:order-1">
                         <div id="pie" class="w-full p-y4"></div>
                     </div>
-                    <coingecko-coin-price-chart-widget currency="usd" coin-id="aerochain" locale="en" height="300">
-                    </coingecko-coin-price-chart-widget>
+                    <!-- <coingecko-coin-price-chart-widget currency="usd" coin-id="aerochain" locale="en" height="300">
+                    </coingecko-coin-price-chart-widget> -->
                 </div>
             </div>
         </section>
@@ -417,24 +423,29 @@
 
         <section id="findus" class="container py-12">
             <div class="grid grid-cols-1 items-center gap-8">
-                <h1 class="text-5xl sm:text-6xl text-slate-100 font-bold text-center">Find Us <span class="text-yellow-400">On</span></h1>
+                <h1 class="text-5xl sm:text-6xl text-slate-100 font-bold text-center">Find Us <span
+                        class="text-yellow-400">On</span></h1>
 
                 <div class="grid grid-cols-2 sm:grid-cols-5 gap-2 items-center justify-center">
-                    <a href="https://pancakeswap.finance/swap?outputCurrency=0x6b992d72bda6a5463aefa01e4790ea3767af91c2" class="flex gap-2 items-center font-bold text-lg sm:text-xl">
+                    <a href="https://pancakeswap.finance/swap?outputCurrency=0x6b992d72bda6a5463aefa01e4790ea3767af91c2"
+                        class="flex gap-2 items-center font-bold text-lg sm:text-xl">
                         <img src="./images/bunny-color.svg" alt="logo" class="max-h-12">
                         PancakeSwap
                     </a>
-                    <a href="https://poocoin.app/tokens/0x6b992d72bda6a5463aefa01e4790ea3767af91c2" class="flex gap-2 items-center font-bold text-xl sm:text-3xl">
+                    <a href="https://poocoin.app/tokens/0x6b992d72bda6a5463aefa01e4790ea3767af91c2"
+                        class="flex gap-2 items-center font-bold text-xl sm:text-3xl">
                         <img src="./images/poocoin.png" alt="logo" class="max-h-12">
                         Poocoin
                     </a>
-                    <a href="https://www.dextools.io/app/bsc/pair-explorer/0xeeac47e65f53c357b62838d36acab550c2c03484" class="">
+                    <a href="https://www.dextools.io/app/bsc/pair-explorer/0xeeac47e65f53c357b62838d36acab550c2c03484"
+                        class="">
                         <img src="./images/dext.png" alt="logo" class="max-h-12">
                     </a>
                     <a href="https://www.coingecko.com/en/coins/aerochain" class="">
                         <img src="./images//coingecko.webp" alt="logo" class="max-h-12">
                     </a>
-                    <a href="https://charts.bogged.finance/?c=bsc&t=0x6B992D72bDA6a5463aefA01e4790ea3767Af91c2" class="">
+                    <a href="https://charts.bogged.finance/?c=bsc&t=0x6B992D72bDA6a5463aefA01e4790ea3767Af91c2"
+                        class="">
                         <img src="./images/bogged.svg" alt="logo" class="max-h-12">
                     </a>
                 </div>
