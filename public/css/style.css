@@ -818,6 +818,38 @@ nav {
   height: 16rem;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
+.max-h-8 {
+  max-height: 2rem;
+}
+
+.max-h-12 {
+  max-height: 3rem;
+}
+
+.max-h-32 {
+  max-height: 8rem;
+}
+
+.max-h-2 {
+  max-height: 0.5rem;
+}
+
+.max-h-24 {
+  max-height: 6rem;
+}
+
+.max-h-20 {
+  max-height: 5rem;
+}
+
+.max-h-16 {
+  max-height: 4rem;
+}
+
 .w-40 {
   width: 10rem;
 }
@@ -836,6 +868,12 @@ nav {
 
 .w-48 {
   width: 12rem;
+}
+
+.w-fit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .max-w-sm {
@@ -1085,6 +1123,10 @@ nav {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .font-inter {
   font-family: Inter, sans-serif;
 }
@@ -1112,6 +1154,16 @@ nav {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-normal {
@@ -1222,6 +1274,10 @@ nav {
     display: flex;
   }
 
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:h-96 {
     height: 24rem;
   }
@@ -1244,6 +1300,14 @@ nav {
 
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .sm\:flex-row {
@@ -1283,6 +1347,21 @@ nav {
   .sm\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
