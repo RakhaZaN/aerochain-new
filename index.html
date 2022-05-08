@@ -13,14 +13,13 @@
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <script src="/public/js/main.js"></script>
     <!-- Graphic Js -->
-    <!-- <script src="https://widgets.coingecko.com/coingecko-coin-price-chart-widget.js"></script> -->
     <script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
 
     <!-- Fav Icon -->
-    <link rel="shortcut icon" href="./images/fav.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/public/images/fav.svg" type="image/x-icon">
     <title>Aerochain</title>
 </head>
 
@@ -33,7 +32,7 @@
             <div class="container flex items-center gap-8">
                 <!-- Logo Brand -->
                 <!-- <a href="#">
-                    <img src="./images/icon.svg" alt="icon" class="w-40 md:w-52">
+                    <img src="/public/images/icon.svg" alt="icon" class="w-40 md:w-52">
                 </a> -->
                 <!-- Humberger Menu -->
                 <div id="burger-menu"
@@ -107,7 +106,7 @@
         <div class="hidden sidebar-menu fixed top-0 left-0 bottom-0 w-full z-50">
             <nav class="relative flex flex-col py-6 px-6 w-full h-full bg-black overflow-y-auto">
                 <div class="flex items-center mb-4">
-                    <img src="./images/icon.svg" alt="Logo" class="w-3/5" />
+                    <img src="/public/images/icon.svg" alt="Logo" class="w-3/5" />
                     <button class="sidebar-close ml-auto">
                         <svg class="h-6 w-6 text-slate-600 cursor-pointer hover:text-slate-800"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
@@ -195,7 +194,7 @@
             <div class="flex items-center flex-col sm:flex-row gap-20" data-aos="fade-up">
                 <div class="flex items-center text-center flex-col gap-4">
 
-                    <img src="./images/logo.png" alt="logo" class="sm:w-1/6">
+                    <img src="/public/images/logo.png" alt="logo" class="sm:w-1/6">
                     <h3 class="text-5xl -mb-5 font-semibold">Welcome to <span
                             class="font-extrabold text-6xl bg-clip-text text-transparent bg-gradient-to-tl from-purple-900 via-orange-400 to-yellow-400">Aerochain</span>
                     </h3>
@@ -235,6 +234,7 @@
                 </div> -->
             </div>
         </section>
+        <!-- Marquee Graphic -->
         <coingecko-coin-price-marquee-widget coin-ids="bitcoin,ethereum,eos,ripple,litecoin" currency="usd" background-color="#000000" locale="en" font-color="#ffffff">
         </coingecko-coin-price-marquee-widget>
 
@@ -252,7 +252,7 @@
                             class="text-yellow-400 font-semibold">3S</span></div>
                 </div>
                 <div class="flex items-center justify-center sm:px-12">
-                    <img src="./images/feature1.a9252bc3.png" alt="illustrasi1" class="w-full">
+                    <img src="/public/images/feature1.a9252bc3.png" alt="illustrasi1" class="w-full">
                 </div>
             </div>
         </section>
@@ -270,7 +270,7 @@
                         the chain cost for developers and users</div>
                 </div>
                 <div class="flex items-center justify-center sm:px-12 sm:order-first">
-                    <img src="./images/feature2.59d0d01b.png" alt="illustrasi2" class="w-full">
+                    <img src="/public/images/feature2.59d0d01b.png" alt="illustrasi2" class="w-full">
                 </div>
             </div>
         </section>
@@ -288,7 +288,7 @@
                         mainstream currencies to create even better cross chain experience</div>
                 </div>
                 <div class="flex items-center justify-center sm:px-12">
-                    <img src="./images/feature3.e64d6a74.png" alt="illustrasi2" class="w-full">
+                    <img src="/public/images/feature3.e64d6a74.png" alt="illustrasi2" class="w-full">
                 </div>
             </div>
         </section>
@@ -306,7 +306,7 @@
                         SDK to seamlessly connect the ecology on Ethereum chain</div>
                 </div>
                 <div class="flex items-center justify-center sm:px-12 sm:order-first">
-                    <img src="./images/feature4.7b38a5a7.png" alt="illustrasi2" class="w-full">
+                    <img src="/public/images/feature4.7b38a5a7.png" alt="illustrasi2" class="w-full">
                 </div>
             </div>
         </section>
@@ -318,13 +318,8 @@
             <div class="grid grid-cols-1 items-center gap-8" data-aos="fade-up">
                 <h1 class="text-5xl sm:text-6xl text-slate-100 font-bold text-center">The <span
                         class="text-yellow-400">Tokenomics</span></h1>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 items-center gap-y-8">
-                    <div class="relative sm:order-1">
-                        <div id="pie" class="w-full p-y4"></div>
-                    </div>
-                    <!-- <coingecko-coin-price-chart-widget currency="usd" coin-id="aerochain" locale="en" height="300">
-                    </coingecko-coin-price-chart-widget> -->
+                <div class="relative sm:order-1">
+                    <div id="pie" class="w-full p-y4"></div>
                 </div>
             </div>
         </section>
@@ -338,7 +333,7 @@
                 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2" data-aos="fade-up"
                     data-aos-delay="1000">
                     <div class="card card-secondary">
-                        <img src="./images/team/ceo.jpg" alt="ceo" class="object-cover h-64 object-top">
+                        <img src="/public/images/team/ceo.jpg" alt="ceo" class="object-cover h-64 object-top">
                         <div class="card-body">
                             <h4 class="">Samuel Tabuty</h4>
                             <small class="text-xs text-slate-300">CEO</small>
@@ -348,7 +343,7 @@
                         </div>
                     </div>
                     <div class="card card-secondary">
-                        <img src="./images/team/coo.jpg" alt="ceo" class="object-cover h-64 object-top">
+                        <img src="/public/images/team/coo.jpg" alt="ceo" class="object-cover h-64 object-top">
                         <div class="card-body">
                             <h4 class="">Yosef HW</h4>
                             <small class="text-xs text-slate-300">COO</small>
@@ -358,7 +353,7 @@
                         </div>
                     </div>
                     <div class="card card-secondary">
-                        <img src="./images/team/globalRelation.jpg" alt="ceo" class="object-cover h-64 object-top">
+                        <img src="/public/images/team/globalRelation.jpg" alt="ceo" class="object-cover h-64 object-top">
                         <div class="card-body">
                             <h4 class="">Yesaya Ray</h4>
                             <small class="text-xs text-slate-300">Global Relation</small>
@@ -368,7 +363,7 @@
                         </div>
                     </div>
                     <div class="card card-secondary">
-                        <img src="./images/team/publicRelation.jpg" alt="ceo" class="object-cover h-64 object-top">
+                        <img src="/public/images/team/publicRelation.jpg" alt="ceo" class="object-cover h-64 object-top">
                         <div class="card-body">
                             <h4 class="">Nico Aditya</h4>
                             <small class="text-xs text-slate-300">Public Relation</small>
@@ -378,7 +373,7 @@
                         </div>
                     </div>
                     <div class="card card-secondary">
-                        <img src="./images/team/scriptleader.jpg" alt="ceo" class="object-cover h-64 object-top">
+                        <img src="/public/images/team/scriptleader.jpg" alt="ceo" class="object-cover h-64 object-top">
                         <div class="card-body">
                             <h4 class="">Sisi Indri</h4>
                             <small class="text-xs text-slate-300">Script Leader</small>
@@ -388,7 +383,7 @@
                         </div>
                     </div>
                     <div class="card card-secondary">
-                        <img src="./images/team/socialMediaLeader.jpg" alt="ceo" class="object-cover h-64 object-top">
+                        <img src="/public/images/team/socialMediaLeader.jpg" alt="ceo" class="object-cover h-64 object-top">
                         <div class="card-body">
                             <h4 class="">Hadasa Kwok</h4>
                             <small class="text-xs text-slate-300">Social Media Leader</small>
@@ -398,7 +393,7 @@
                         </div>
                     </div>
                     <div class="card card-secondary">
-                        <img src="./images/user.png" alt="ceo" class="object-cover h-64 object-top">
+                        <img src="/public/images/user.png" alt="ceo" class="object-cover h-64 object-top">
                         <div class="card-body">
                             <h4 class="">Wisnu Wardanu</h4>
                             <small class="text-xs text-slate-300">IT - Dev</small>
@@ -408,7 +403,7 @@
                         </div>
                     </div>
                     <div class="card card-secondary">
-                        <img src="./images/user.png" alt="ceo" class="object-cover h-64 object-top">
+                        <img src="/public/images/user.png" alt="ceo" class="object-cover h-64 object-top">
                         <div class="card-body">
                             <h4 class="">Niko</h4>
                             <small class="text-xs text-slate-300">CTO</small>
@@ -429,24 +424,24 @@
                 <div class="grid grid-cols-2 sm:grid-cols-5 gap-2 items-center justify-center">
                     <a href="https://pancakeswap.finance/swap?outputCurrency=0x6b992d72bda6a5463aefa01e4790ea3767af91c2"
                         class="flex gap-2 items-center font-bold text-lg sm:text-xl">
-                        <img src="./images/bunny-color.svg" alt="logo" class="max-h-12">
+                        <img src="/public/images/bunny-color.svg" alt="logo" class="max-h-12">
                         PancakeSwap
                     </a>
                     <a href="https://poocoin.app/tokens/0x6b992d72bda6a5463aefa01e4790ea3767af91c2"
                         class="flex gap-2 items-center font-bold text-xl sm:text-3xl">
-                        <img src="./images/poocoin.png" alt="logo" class="max-h-12">
+                        <img src="/public/images/poocoin.png" alt="logo" class="max-h-12">
                         Poocoin
                     </a>
                     <a href="https://www.dextools.io/app/bsc/pair-explorer/0xeeac47e65f53c357b62838d36acab550c2c03484"
                         class="">
-                        <img src="./images/dext.png" alt="logo" class="max-h-12">
+                        <img src="/public/images/dext.png" alt="logo" class="max-h-12">
                     </a>
                     <a href="https://www.coingecko.com/en/coins/aerochain" class="">
-                        <img src="./images//coingecko.webp" alt="logo" class="max-h-12">
+                        <img src="/public/images//coingecko.webp" alt="logo" class="max-h-12">
                     </a>
                     <a href="https://charts.bogged.finance/?c=bsc&t=0x6B992D72bDA6a5463aefA01e4790ea3767Af91c2"
                         class="">
-                        <img src="./images/bogged.svg" alt="logo" class="max-h-12">
+                        <img src="/public/images/bogged.svg" alt="logo" class="max-h-12">
                     </a>
                 </div>
             </div>
@@ -458,7 +453,7 @@
     <footer class="container pt-9 pb-12">
         <div class="flex flex-col sm:flex-row justify-between items-center sm:items-start gap-y-12">
             <div class="flex flex-col items-center sm:items-start gap-4">
-                <img src="./images/icon.svg" alt="icon" class="w-48">
+                <img src="/public/images/icon.svg" alt="icon" class="w-48">
                 <div class="flex gap-4">
                     <a href="#" target="_blank"
                         class="block text-center py-3 p-4 text-xs bg-blue-700 rounded-full mt-4"><i
@@ -502,7 +497,7 @@
     <!-- JS -->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="./js/piechart.js"></script>
+    <script src="/public/js/piechart.js"></script>
     <script src="/node_modules/particles.js/particles.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.js" integrity="sha512-BgV3bZfMmUklIZI+dP0SILdmQ0RBY2gxegFFyfgo4Ui56WhKF4Pny9LsV/l96jxDDA+2w47zAXA4IyHo2UT/Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <script>
@@ -512,7 +507,7 @@
             duration: '1000',
         });
 
-        particlesJS.load('particles', './js/particlesjs-config.json');
+        particlesJS.load('particles', '/public/js/particlesjs-config.json');
     </script>
 </body>
 
